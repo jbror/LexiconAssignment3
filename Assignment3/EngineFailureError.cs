@@ -9,8 +9,8 @@ namespace Assignment3;
 class EngineFailureError : SystemError
 
 {
-    public override void ErrorMessage()
+    public override string ErrorMessage()
     {
-        Console.WriteLine("Engine failure!"); 
+        return "Engine failure!";
     }
 }

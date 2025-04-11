@@ -8,7 +8,8 @@ namespace Assignment3;
 
 abstract class SystemError
 {
-    public abstract void ErrorMessage();
+    
+    public abstract string ErrorMessage();
 }
 
 

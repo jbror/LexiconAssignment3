@@ -9,8 +9,8 @@ namespace Assignment3;
 class TransmissionError : SystemError
 
 {
-    public override void ErrorMessage()
+    public override string ErrorMessage()
     {
-        Console.WriteLine("Brake failure!");
+        return "Transmission error!";
     }
-}
+}   

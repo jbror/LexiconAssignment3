@@ -8,8 +8,8 @@ namespace Assignment3;
 class BrakeFailureError : SystemError
 
 {
-    public override void ErrorMessage()
+    public override string ErrorMessage()
     {
-        Console.WriteLine("Brake failure!");
+        return "Brake failure!";
     }
 }
