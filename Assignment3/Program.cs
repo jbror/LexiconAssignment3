@@ -4,14 +4,14 @@ using Assignment3;
 
 Console.WriteLine("Hi hello!");
 VehicleHandler handler = new VehicleHandler();
-List<SystemError> errors = new List<SystemError>();
-errors.Add(new EngineFailureError());
-errors.Add(new BrakeFailureError());
-errors.Add(new TransmissionError());
 bool running = true;
 
 void DisplaySystemErrors()
 {
+    List<SystemError> errors = new List<SystemError>();
+    errors.Add(new EngineFailureError());
+    errors.Add(new BrakeFailureError());
+    errors.Add(new TransmissionError());
     foreach (var i in errors)
     {
         Console.WriteLine(i.ErrorMessage());

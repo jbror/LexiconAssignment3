@@ -49,7 +49,8 @@ internal class Vehicle
         get => year!;
         set
         {
-            int currentYear = 2025; // Eller kolla mot datum direkt?
+            
+            int currentYear = DateTime.Now.Year;
             if (value >= 1886 && value <= currentYear)
             {
                 year = value;
