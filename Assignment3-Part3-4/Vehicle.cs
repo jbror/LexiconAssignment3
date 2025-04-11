@@ -6,6 +6,42 @@ using System.Threading.Tasks;
 
 namespace Assignment3_Part3_4;
 
-internal class Vehicle
+abstract class Vehicle
 {
+
+public void StartEngine()
+    {
+        Console.WriteLine("This is StartEngine");
+    }
+
+
+ public void Stats()
+   {
+
+        Console.WriteLine("This is Stats");
+
+
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
