@@ -10,7 +10,13 @@ errors.Add(new BrakeFailureError());
 errors.Add(new TransmissionError());
 bool running = true;
 
-
+void DisplaySystemErrors()
+{
+    foreach (var i in errors)
+    {
+        Console.WriteLine(i.ErrorMessage());
+    }
+}
 
 while (running)
 {
@@ -19,7 +25,7 @@ while (running)
     Console.WriteLine("2. List all vehicles");
     Console.WriteLine("3. Update a vehicle");
     Console.WriteLine("4. Exit");
-    Console.WriteLine("5. Display current system errors;");
+    Console.WriteLine("5. Display current system errors");
 
     Console.Write("Select an option: ");
 
@@ -42,14 +48,12 @@ while (running)
             break;
         case "5":
             Console.WriteLine("Ok, enjoy the errors!");
-            foreach (var i in  errors)
-            {
-                Console.WriteLine(i.ErrorMessage());
-            }
+            DisplaySystemErrors();
             break;
         default:
-            Console.WriteLine("Invalid option. Please choose 1–4.");
+            Console.WriteLine("Invalid option. Please choose 1–5.");
             break;
     }
+    
 }
 
