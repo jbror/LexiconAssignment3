@@ -8,4 +8,24 @@ namespace Assignment3_Part3_4;
 
 internal class Car : Vehicle
 {
+    private int seats = 5;
+    public int Seats
+    {
+        get {  return seats; }
+        set { seats = value; }
+
+       
+
+    }
 }
+        
+
+
+
+
+
+
+
+
+
+
