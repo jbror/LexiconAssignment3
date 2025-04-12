@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assignment3_Part3_4;
 
-internal class Car : Vehicle
+internal class Car : Vehicle, ICleanable
 {
     private int seats = 5;
     public int Seats
@@ -29,7 +29,10 @@ internal class Car : Vehicle
     }
 
 
-
+    public void Clean()
+    {
+        Console.WriteLine("My car just got really shiny. Its cleaned!!");
+    }
 
 
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assignment3_Part3_4;
 
-internal class Truck : Vehicle
+internal class Truck : Vehicle, ICleanable
 {
     private double cargoCapacity = 1500;
     public double CargoCapacity
@@ -32,6 +32,10 @@ internal class Truck : Vehicle
 
 
 
+    public void Clean()
+    {
+        Console.WriteLine("My truck just got really shiny. Its cleaned!!");
+    }
 
 
 

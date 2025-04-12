@@ -2,6 +2,8 @@
 using Assignment3_Part3_4;
 
 Console.WriteLine("Hi ho Hello");
+Console.WriteLine();
+
 
 
 Car car = new Car();
@@ -18,23 +20,14 @@ vehicles.Add(electricScooter);
 foreach (var i in vehicles)
 {
     Console.WriteLine(i.Stats());
+    Console.WriteLine();
+
+    if (i is ICleanable cleanable)
+    {
+        cleanable.Clean();
+    }
 }
 
 
-
-
-//console.writeline(car.startengine());
-//console.writeline(car.stats());
-
-//console.writeline(truck.startengine());
-//console.writeline(truck.stats());
-
-
-//console.writeline(motorcycle.startengine());
-//console.writeline(motorcycle.stats());
-
-
-//console.writeline(electricscooter.startengine());
-//console.writeline(electricscooter.stats());
 
 
