@@ -11,7 +11,7 @@ internal class Motorcycle : Vehicle
     private bool hasSideCar = true;
     public bool HasSideCar
     {
-        get { return hasSideCar; }
+        get { return hasSideCar!; }
         set { hasSideCar = value; }
 
 
@@ -27,7 +27,7 @@ internal class Motorcycle : Vehicle
 
     public override string Stats()
     {
-        return ($"This bike is cool and have a sidecar, it is{hasSideCar}!");
+        return ($"This bike is cool and have a sidecar, it is {hasSideCar}!");
     }
 
 

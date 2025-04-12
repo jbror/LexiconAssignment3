@@ -11,7 +11,7 @@ internal class Truck : Vehicle
     private double cargoCapacity = 1500;
     public double CargoCapacity
     {
-        get { return cargoCapacity; }
+        get { return cargoCapacity!; }
         set { cargoCapacity = value; }
 
 

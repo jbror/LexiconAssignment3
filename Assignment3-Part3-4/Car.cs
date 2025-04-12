@@ -11,7 +11,7 @@ internal class Car : Vehicle
     private int seats = 5;
     public int Seats
     {
-        get {  return seats; }
+        get {  return seats!; }
         set { seats = value; }
 
 

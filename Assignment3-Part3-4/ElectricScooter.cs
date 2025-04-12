@@ -12,7 +12,7 @@ internal class ElectricScooter : Vehicle
     private int batteryRange = 1500;
     public int BatteryRange
     {
-        get { return batteryRange; }
+        get { return batteryRange!; }
         set { batteryRange = value; }
 
 
@@ -23,12 +23,12 @@ internal class ElectricScooter : Vehicle
 
     public override string StartEngine()
     {
-        return "VR00000M";
+        return "bssssssss";
     }
 
     public override string Stats()
     {
-        return ($"This car is cool and have {batteryRange} batteryrange!");
+        return ($"This scooter is cool and have {batteryRange} batteryrange!");
     }
 
 
