@@ -22,12 +22,12 @@ internal class Truck : Vehicle
 
     public override string StartEngine()
     {
-        return "VR00000M";
+        return "BRUUUUUUM";
     }
 
     public override string Stats()
     {
-        return ($"This car is cool and have {cargoCapacity} cargospace!");
+        return ($"This truck is cool and have {cargoCapacity} cargospace!");
     }
 
 

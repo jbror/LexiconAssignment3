@@ -22,12 +22,12 @@ internal class Motorcycle : Vehicle
 
     public override string StartEngine()
     {
-        return "VR00000M";
+        return "EEEHMMM EHGMMMMMM";
     }
 
     public override string Stats()
     {
-        return ($"This car is cool and have a sidecar, it is{hasSideCar}!");
+        return ($"This bike is cool and have a sidecar, it is{hasSideCar}!");
     }
 
 
