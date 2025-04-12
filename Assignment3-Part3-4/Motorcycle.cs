@@ -8,4 +8,47 @@ namespace Assignment3_Part3_4;
 
 internal class Motorcycle : Vehicle
 {
+    private bool hasSideCar = true;
+    public bool HasSideCar
+    {
+        get { return hasSideCar; }
+        set { hasSideCar = value; }
+
+
+
+    }
+
+
+
+    public override string StartEngine()
+    {
+        return "VR00000M";
+    }
+
+    public override string Stats()
+    {
+        return ($"This car is cool and have a sidecar, it is{hasSideCar}!");
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
+
+

@@ -9,19 +9,12 @@ namespace Assignment3_Part3_4;
 abstract class Vehicle
 {
 
-public void StartEngine()
-    {
-        Console.WriteLine("This is StartEngine");
-    }
+    public abstract string StartEngine();
 
 
- public void Stats()
-   {
 
-        Console.WriteLine("This is Stats");
-
-
-   }
+    public abstract string Stats();
+   
 
 
 

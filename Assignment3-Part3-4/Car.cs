@@ -14,11 +14,31 @@ internal class Car : Vehicle
         get {  return seats; }
         set { seats = value; }
 
-       
 
     }
+
+
+    public override string StartEngine()
+    {
+        return "VR00000M";
+    }
+
+    public override string Stats()
+    {
+        return ($"This car is cool and have {seats} seats!");
+    }
+
+
+
+
+
+
+
+
+
+
 }
-        
+
 
 
 
