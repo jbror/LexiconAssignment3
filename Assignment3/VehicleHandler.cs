@@ -25,11 +25,11 @@ internal class VehicleHandler
 
 
             Console.Write("Enter year: ");
-            var year = int.Parse(GetStringFromUser());
+            int year = GetIntFromUser();
 
 
             Console.Write("Enter weight: ");
-            var weight = double.Parse(GetStringFromUser());
+            double weight = GetDoubleFromUser();
 
             Vehicle newVehicle = new Vehicle(brand, model, year, weight);
             vehicles.Add(newVehicle);
@@ -139,8 +139,8 @@ internal class VehicleHandler
 
             case "3":
                 Console.Write("Enter year: ");
-                if (int.TryParse(Console.ReadLine(), out int newYear))
-                {
+                int newYear = GetIntFromUser();
+                
                     try
                     {
                         vehicleToUpdate.Year = newYear;
@@ -150,17 +150,13 @@ internal class VehicleHandler
                     {
                         Console.WriteLine($"Error: {ex.Message}");
                     }
-                }
-                else
-                {
-                    Console.WriteLine("Invalid year input.");
-                }
+         
                 break;
 
             case "4":
                 Console.Write("Enter new weight (positive number): ");
-                if (double.TryParse(Console.ReadLine(), out double newWeight))
-                {
+                double newWeight = GetDoubleFromUser();
+                
                     try
                     {
                         vehicleToUpdate.Weight = newWeight;
@@ -170,11 +166,7 @@ internal class VehicleHandler
                     {
                         Console.WriteLine($"Error: {ex.Message}");
                     }
-                }
-                else
-                {
-                    Console.WriteLine("Invalid weight input.");
-                }
+
                 break;
 
             default:
@@ -208,5 +200,52 @@ internal class VehicleHandler
 
 
     }
+
+    public int GetIntFromUser()
+    {
+        int value;
+
+        while (true)
+        {
+            Console.Write("Enter year: ");
+            var input = Console.ReadLine();
+
+            if (int.TryParse(input, out value))
+            {
+                return value;
+            }
+            else
+            {
+                Console.WriteLine("Invalid input. Please enter a number.");
+            }
+        }
+    }
+
+
+
+    public double GetDoubleFromUser()
+    {
+        double value;
+
+        while (true)
+        {
+            Console.Write("Enter weight, decimals is accepted: ");
+            var input = Console.ReadLine();
+
+            if (double.TryParse(input, out value))
+            {
+                return value;
+            }
+            else
+            {
+                Console.WriteLine("Invalid input. Please enter a valid number.");
+            }
+        }
+    }
+
+
+
+
+
 }
 

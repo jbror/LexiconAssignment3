@@ -57,7 +57,7 @@ internal class Vehicle
             }
             else
             {
-                throw new ArgumentException("To old car");
+                throw new ArgumentException("To old car!");
             }
         }
     }
